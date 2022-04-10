@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+.main-background {
+    position: relative;
+    text-align: center;
+    color:black;
+    filter: brightness(0.5);
+    border-radius: 1rem;
+}
+.header-of-M {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-shadow: 10px 10px 10px black;
+}
+.who {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-shadow: 10px 10px 10px black;
+}
+.who>p:hover {
+    display: inline-block;
+    position: relative;
+}
+.who::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+.who:hover::after{
+    transform: scaleX(1);
+}
+.Features {
+    padding: 4rem 10vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.icons  {
+    text-decoration: underline none;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.icons > p {
+    color: rgb(56, 56, 56);
+    font-size: medium;
+}
+.icons > a {
+    color: #041a45;
+    text-decoration: none;
+}
+.last-part {
+    display: flex;
+    margin-left:10vw; 
+}
+.text-cold-tone {
+    color: rgb(56, 56, 56);
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+.text-cold-tone > p {
+    padding-top: 1rem;
+    padding-bottom:2rem;
+}
+.unordered > li {
+    list-style-type: square;
+}
+.unordered > li:hover {
+    display: inline-block;
+    position: relative;
+}
+.unordered > li::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #262727;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.unordered > li:hover::after{
+    transform: scaleX(1);
+}
+.change-button {
+    background-color: rgb(43, 42, 42);
+    color: whitesmoke;
+    padding: 1rem 2.2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+.change-button:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.change-button:active {
+    background-color: rgb(43, 42, 42);
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.img-box {
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 3rem;
+}
+
+.carousel-image {
+    width : 500px;
+    height : 400px;
+}
+
+.hide {
+    display :none;
+}
