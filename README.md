@@ -1,3 +1,3 @@
 # First-Practice
 
-benil ilk git kurma deneyimim. Emrecandan Selamlar...
+benil ilk git kurma deneyimim. 
